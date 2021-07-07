@@ -1,0 +1,38 @@
+
+  <ion-fab style="margin-top: -100px;" vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button fill="clear" color="light" (click)="_editor?.capture()">
+      <ion-icon *ngIf="_editor?.type == 'photo'" style="font-size: 70px;" name="aperture-outline"></ion-icon>
+      <ion-icon color="danger" *ngIf="_editor?.type == 'video'" style="font-size: 70px;" name="stop"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab style="margin-top: -100px;" vertical="center" horizontal="start">
+    <ion-button size="small" fill="clear" color="light" (click)="mode('photo')">
+      <ion-icon style="font-size: 25px;" name="camera-outline"></ion-icon>
+      <span class="fs-12 bold">Take Photos</span>
+    </ion-button>
+    <br />
+    <ion-button size="small" fill="clear" color="light" (click)="mode('video')">
+      <ion-icon style="font-size: 25px;" name="videocam-outline"></ion-icon>
+      <span class="fs-12 bold">Record Video</span>
+    </ion-button>
+    <br />
+    <ion-button size="small" fill="clear" color="light" (click)="_editor?.get_photo()">
+      <ion-icon style="font-size: 25px;" name="images-outline"></ion-icon>
+      <span class="fs-12 bold">Gallery</span>
+    </ion-button>
+    <br />
+    <ion-button size="small" fill="clear" color="light" (click)="_editor?.flipCamera()">
+      <ion-icon style="font-size: 25px;" name="camera-reverse-outline"></ion-icon>
+      <span class="fs-12 bold">Switch Camera</span>
+    </ion-button>
+    <br />
+    <ion-button size="small" fill="clear" color="light" (click)="_editor?.flashOn()">
+      <ion-icon *ngIf="!_editor?.flash" style="font-size: 25px;" name="flash-outline"></ion-icon>
+      <ion-icon *ngIf="_editor?.flash" style="font-size: 25px;" name="flash"></ion-icon>
+      <span *ngIf="!_editor?.flash" class="fs-12 bold">Flash On</span>
+      <span *ngIf="_editor?.flash" class="fs-12 bold">Flash Off</span>
+    </ion-button>
+  </ion-fab>
+
+  <div id="content"></div>

@@ -1,4 +1,4 @@
-package io.ionic.demo.pg.cap.ng;
+package io.kaosdesigns.app;
 
 import com.getcapacitor.BridgeActivity;
 

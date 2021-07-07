@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Html 5 Inputs
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let photo of images; index as position">
+        <ion-img *ngIf="photo?.type !== 'video_post'" [src]="photo?.url"></ion-img>
+        <video *ngIf="photo?.type == 'video_post'" autoplay="true" style="width: 100%; height: 200px">
+          <source [src]="sanitizer?.bypassSecurityTrustResourceUrl(photo?.url)">
+          Your browser does not support the video tag.
+        </video>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-button (click)="open('video-capture')">Capture Video</ion-button>
+  <input class="hidden" capture="camcorder" (change)="onFile($event, 'video_post')" id="video-capture" accept="video/*" type="file" />
+
+
+  <ion-button (click)="open('photo-capture')">Capture Photo</ion-button>
+  <input class="hidden" capture="camera" (change)="onFile($event, 'image_post', true)" id="photo-capture" accept="image/*" type="file" />
+  
+</ion-content>

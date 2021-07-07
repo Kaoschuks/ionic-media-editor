@@ -1,0 +1,13 @@
+:host {
+    ion-fab {
+        --box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    ion-button {
+        margin-top: 10px;
+        span {
+            margin-left: 10px;
+            text-transform: capitalize;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+
+<ion-fab style="margin-top: -90px;" vertical="center" horizontal="start">
+  <ion-button (click)="edit('filter')" [color]="(edit_type == 'filter') ? 'light' : 'white'">
+    <ion-icon style="font-size: 25px;" name="color-filter-outline"></ion-icon>
+    <span class="fs-14 bold">filter</span>
+  </ion-button>
+  <br />
+  <ion-button (click)="edit('adjustments')" [color]="(edit_type == 'adjustments') ? 'light' : 'white'">
+    <ion-icon style="font-size: 25px;" name="build-outline"></ion-icon>
+    <span class="fs-14 bold">adjustment</span>
+  </ion-button>
+  <br />
+  <ion-button (click)="edit('text')" [color]="(edit_type == 'text') ? 'light' : 'white'">
+    <ion-icon style="font-size: 25px;" name="text-outline"></ion-icon>
+    <span class="fs-14 bold">text</span>
+  </ion-button>
+  <br />
+  <ion-button (click)="edit('animations')" [color]="(edit_type == 'animations') ? 'light' : 'white'" color="white">
+    <ion-icon style="font-size: 25px;" name="happy-outline"></ion-icon>
+    <span class="fs-14 bold">animations</span>
+  </ion-button>
+  <br />
+  <ion-button (click)="edit('rotate')" [color]="(edit_type == 'rotate') ? 'light' : 'white'" color="white">
+    <ion-icon style="font-size: 25px;" name="reload-circle-outline"></ion-icon>
+    <span class="fs-14 bold">rotate</span>
+  </ion-button>
+  <br />
+  <ion-button (click)="edit('crop')" [color]="(edit_type == 'crop') ? 'light' : 'white'" color="white">
+    <ion-icon style="font-size: 25px;" name="crop-outline"></ion-icon>
+    <span class="fs-14 bold">crop</span>
+  </ion-button>
+  <br />
+  <br />
+  <br />
+  <ion-button (click)="edit('undo')" [color]="(edit_type == 'undo') ? 'light' : 'white'" color="white">
+    <ion-icon style="font-size: 25px;" name="arrow-undo-outline"></ion-icon>
+    <span class="fs-14 bold">undo</span>
+  </ion-button>
+</ion-fab>
+
+<ion-fab vertical="top" horizontal="end" slot="fixed">
+  <ion-button size="small" color="warning" shape="round">
+    <span class="fs-16 bold">save</span>
+    <ion-icon slot="end" style="font-size: 20px; margin-left: 10px;" name="play"></ion-icon>
+  </ion-button>
+</ion-fab>
+
+<ion-fab vertical="top" horizontal="start" slot="fixed">
+  <ion-button (click)="close()" size="small" color="white">
+    <ion-icon style="font-size: 25px;" name="close"></ion-icon>
+  </ion-button>
+</ion-fab>
+
+
+<div class="filter">
+  <div class="scroll_container">
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+      <div class="img_box center_img">
+          <img src="" class="crop_img">
+      </div>
+  </div>
+</div>
