@@ -27,6 +27,7 @@ The methods can be applied to both ionic-angular, ionic-reactjs, ionic-vue and i
 
 ## Future Additional Features
 
+0) Add cordova-photo-library and its layout
 1) taking multiple pictures/videos before editing
 2) adding filter
 3) adding adjustment
