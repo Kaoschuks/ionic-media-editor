@@ -36,4 +36,5 @@ The methods can be applied to both ionic-angular, ionic-reactjs, ionic-vue and i
 *** adding text
 *** creating album from multiple images & video
 
-
+###### Contribute
+Please help is appreciated 
