@@ -4,7 +4,7 @@ const { CameraPreview } = Plugins;
 import { CameraPreviewOptions, CameraPreviewPictureOptions, CameraPreviewFlashMode } from '@capacitor-community/camera-preview';
 // import { PhotoLibrary } from '@ionic-native/photo-library/ngx';
 import { Platform } from '@ionic/angular';
-
+import '@capacitor-community/camera-preview'
 @Injectable({
   providedIn: 'root'
 })
